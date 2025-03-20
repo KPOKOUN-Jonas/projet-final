@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Produits - Ferme des Œufs Frais</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="produits.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER ET NAVIGATION -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">LesPondoirs</div>
+                <div class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="produits.html">Produits</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="connexion.html" class="btn">Connexion</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BANNIÈRE DE LA PAGE PRODUITS -->
+    <section class="product-banner">
+        <div class="container">
+            <h1>Découvrez nos produits frais</h1>
+            <p>Des œufs de qualité et des poules élevées avec soin</p>
+        </div>
+    </section>
+
+    <!-- FILTRES ET RECHERCHE -->
+    <section class="filter-section">
+        <div class="container">
+            <div class="filters">
+                <div class="search-bar">
+                    <input type="text" placeholder="Rechercher un produit...">
+                    <button><i class="fas fa-search"></i></button>
+                </div>
+                <div class="category-filters">
+                    <button class="filter-btn active" data-filter="all">Tous</button>
+                    <button class="filter-btn" data-filter="oeufs">Œufs</button>
+                    <button class="filter-btn" data-filter="poules">Poules</button>
+                    <button class="filter-btn" data-filter="accessoires">Accessoires</button>
+                </div>
+                <div class="sort-options">
+                    <select>
+                        <option value="popularity">Popularité</option>
+                        <option value="price-asc">Prix croissant</option>
+                        <option value="price-desc">Prix décroissant</option>
+                        <option value="newest">Nouveautés</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATALOGUE DE PRODUITS -->
+    <section class="products-catalogue">
+        <div class="container">
+            <div class="products-grid">
+                <!-- Produit 1 -->
+                <div class="product-card" data-category="oeufs">
+                    <div class="product-badge new">Nouveau</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1587486913049-53fc88980cfc?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Œufs frais">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Œufs frais - Calibre moyen</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(42 avis)</span>
+                        </div>
+                        <div class="product-price">4.50€ / douzaine</div>
+                        <p>Œufs frais de poules élevées en plein air, calibre moyen, parfaits pour vos recettes du quotidien.</p>
+                        <div class="product-buttons">
+                            <a href="#" class="btn add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Ajouter au panier</a>
+                            <a href="#" class="btn details-btn">Détails</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produit 2 -->
+                <div class="product-card" data-category="oeufs">
+                    <div class="product-badge bestseller">Bestseller</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1569288052389-dac9b01c9c05?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Œufs bio premium">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Œufs bio premium</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <span>(78 avis)</span>
+                        </div>
+                        <div class="product-price">5.95€ / douzaine</div>
+                        <p>Nos œufs premium, plus gros et au jaune plus intense, issus de poules nourries avec un complément de graines de lin.</p>
+                        <div class="product-buttons">
+                            <a href="#" class="btn add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Ajouter au panier</a>
+                            <a href="#" class="btn details-btn">Détails</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produit 3 -->
+                <div class="product-card" data-category="poules">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Poules pondeuses">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Poules pondeuses</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(36 avis)</span>
+                        </div>
+                        <div class="product-price">18.00€ / unité</div>
+                        <p>Poules pondeuses de races rustiques, élevées en plein air et prêtes à pondre. Idéales pour votre jardin.</p>
+                        <div class="product-buttons">
+                            <a href="#" class="btn add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Ajouter au panier</a>
+                            <a href="#" class="btn details-btn">Détails</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produit 4 -->
+                <div class="product-card" data-category="oeufs">
+                    <div class="product-badge promo">-10%</div>
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1598965675045-45c5e72c7d05?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Œufs bio petit calibre">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Œufs bio petit calibre</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(23 avis)</span>
+                        </div>
+                        <div class="product-price">
+                            <span class="original-price">4.20€</span>
+                            <span class="discount-price">3.80€ / douzaine</span>
+                        </div>
+                        <p>Petits œufs bio, idéaux pour les enfants et les préparations pâtissières. Goût authentique garanti.</p>
+                        <div class="product-buttons">
+                            <a href="#" class="btn add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Ajouter au panier</a>
+                            <a href="#" class="btn details-btn">Détails</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produit 5 -->
+                <div class="product-card" data-category="accessoires">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1569466593977-94ee7ed02ec9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Alimentation bio pour poules">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Mangeoire pour poules</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="far fa-star"></i>
+                            <span>(14 avis)</span>
+                        </div>
+                        <div class="product-price">22.50€</div>
+                        <p>Mangeoire en acier galvanisé, résistante et durable. Capacité de 5kg pour nourrir jusqu'à 8 poules.</p>
+                        <div class="product-buttons">
+                            <a href="#" class="btn add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Ajouter au panier</a>
+                            <a href="#" class="btn details-btn">Détails</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Produit 6 -->
+                <div class="product-card" data-category="accessoires">
+                    <div class="product-image">
+                        <img src="https://images.unsplash.com/photo-1569466593977-94ee7ed02ec9?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Alimentation bio pour poules">
+                        <div class="product-actions">
+                            <button class="action-btn"><i class="fas fa-heart"></i></button>
+                            <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                            <button class="action-btn"><i class="fas fa-eye"></i></button>
+                        </div>
+                    </div>
+                    <div class="product-info">
+                        <h3>Alimentation bio pour poules</h3>
+                        <div class="product-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                            <span>(31 avis)</span>
+                        </div>
+                        <div class="product-price">15.95€ / 5kg</div>
+                        <p>Mélange de céréales bio pour poules pondeuses. Favorise la ponte et la santé de vos poules.</p>
+                        <div class="product-buttons">
+                            <a href="#" class="btn add-to-cart-btn"><i class="fas fa-shopping-cart"></i> Ajouter au panier</a>
+                            <a href="#" class="btn details-btn">Détails</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>  
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Restez informé de nos nouveautés</h2>
+                <p>Inscrivez-vous à notre newsletter pour recevoir nos offres exclusives, des conseils sur l'élevage et des recettes avec nos produits.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Votre adresse e-mail" required>
+                    <button type="submit" class="btn">S'abonner</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Ferme des Œufs Frais</h4>
+                    <p>2 Chemin des Volailles<br>45000 Orléans<br>France</p>
+                    <p>Tél : 02 38 XX XX XX<br>Email : contact@fermedesoeufsfrais.fr</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Liens utiles</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Accueil</a>
+                        <a href="index.html#about">À propos</a>
+                        <a href="produits.html">Produits</a>
+                        <a href="#">Politique de confidentialité</a>
+                        <a href="#">Conditions générales de vente</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p>Inscrivez-vous à notre newsletter pour recevoir nos offres et actualités :</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email" required>
+                        <button type="submit" class="btn">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Ferme des Œufs Frais. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script pour filtrer les produits par catégorie
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                // Retirer la classe active de tous les boutons
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                
+                // Ajouter la classe active au bouton cliqué
+                button.classList.add('active');
+                
+                // Filtrer les produits
+                const filterValue = button.getAttribute('data-filter');
+                
+                document.querySelectorAll('.product-card').forEach(product => {
+                    if (filterValue === 'all' || product.getAttribute('data-category') === filterValue) {
+                        product.style.display = 'block';
+                    } else {
+                        product.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

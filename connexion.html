@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - LesPondoirs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="connexion.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER ET NAVIGATION -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">LesPondoirs</div>
+                <div class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="produits.html">Produits</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="connexion.html" class="btn">Connexion</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SECTION DE CONNEXION -->
+    <section class="auth-section">
+        <div class="container">
+            <div class="auth-container">
+                <div class="auth-form-container">
+                    <div class="auth-tabs">
+                        <button class="auth-tab active" data-tab="login">Connexion</button>
+                        <button class="auth-tab" data-tab="register">Inscription</button>
+                    </div>
+                    
+                    <div class="auth-content" id="login">
+                        <h2>Connexion à votre compte</h2>
+                        <form class="auth-form">
+                            <div class="form-group">
+                                <label for="login-email">Email</label>
+                                <div class="input-icon-wrapper">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="login-email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="login-password">Mot de passe</label>
+                                <div class="input-icon-wrapper">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" id="login-password" name="password" required>
+                                </div>
+                            </div>
+                            <div class="form-options">
+                                <div class="form-check">
+                                    <input type="checkbox" id="remember" name="remember">
+                                    <label for="remember">Se souvenir de moi</label>
+                                </div>
+                                <a href="#" class="forget-password">Mot de passe oublié ?</a>
+                            </div>
+                            <button type="submit" class="btn">Se connecter</button>
+                        </form>
+                        <div class="social-login">
+                            <p>Ou connectez-vous avec</p>
+                            <div class="social-buttons">
+                                <button class="social-btn facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                    Facebook
+                                </button>
+                                <button class="social-btn google">
+                                    <i class="fab fa-google"></i>
+                                    Google
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="auth-content hidden" id="register">
+                        <h2>Créer un compte</h2>
+                        <form class="auth-form">
+                            <div class="form-group">
+                                <label for="register-name">Nom complet</label>
+                                <div class="input-icon-wrapper">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" id="register-name" name="name" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-email">Email</label>
+                                <div class="input-icon-wrapper">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" id="register-email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-password">Mot de passe</label>
+                                <div class="input-icon-wrapper">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" id="register-password" name="password" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="register-confirm-password">Confirmer le mot de passe</label>
+                                <div class="input-icon-wrapper">
+                                    <i class="fas fa-lock"></i>
+                                    <input type="password" id="register-confirm-password" name="confirm-password" required>
+                                </div>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" id="terms" name="terms" required>
+                                <label for="terms">J'accepte les <a href="#">termes et conditions</a> et la <a href="#">politique de confidentialité</a></label>
+                            </div>
+                            <button type="submit" class="btn">S'inscrire</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div class="auth-image">
+                    <div class="auth-image-content">
+                        <h2>Bienvenue chez LesPondoirs</h2>
+                        <p>Connectez-vous pour accéder à votre compte et profiter de nos offres exclusives sur nos produits frais et de qualité.</p>
+                        <ul class="auth-benefits">
+                            <li><i class="fas fa-check-circle"></i> Commandez facilement nos produits</li>
+                            <li><i class="fas fa-check-circle"></i> Suivez l'historique de vos commandes</li>
+                            <li><i class="fas fa-check-circle"></i> Bénéficiez de promotions spéciales</li>
+                            <li><i class="fas fa-check-circle"></i> Soyez informé de nos nouveautés</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Ferme des Œufs Frais</h4>
+                    <p>2 Chemin des Volailles<br>45000 Orléans<br>Senegal</p>
+                    <p>Tél : 02 38 XX XX XX<br>Email : contact@fermedesoeufsfrais.fr</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Liens utiles</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Accueil</a>
+                        <a href="index.html#about">À propos</a>
+                        <a href="produits.html">Produits</a>
+                        <a href="#">Politique de confidentialité</a>
+                        <a href="#">Conditions générales de vente</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p>Inscrivez-vous à notre newsletter pour recevoir nos offres et actualités :</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email" required>
+                        <button type="submit" class="btn">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LesPondoirs. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script pour basculer entre les onglets de connexion et d'inscription
+        document.addEventListener('DOMContentLoaded', function() {
+            const tabs = document.querySelectorAll('.auth-tab');
+            const contents = document.querySelectorAll('.auth-content');
+            
+            tabs.forEach(tab => {
+                tab.addEventListener('click', () => {
+                    // Retirer la classe active de tous les onglets
+                    tabs.forEach(t => t.classList.remove('active'));
+                    // Ajouter la classe active à l'onglet cliqué
+                    tab.classList.add('active');
+                    
+                    // Cacher tous les contenus
+                    contents.forEach(content => content.classList.add('hidden'));
+                    // Afficher le contenu correspondant à l'onglet
+                    document.getElementById(tab.dataset.tab).classList.remove('hidden');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

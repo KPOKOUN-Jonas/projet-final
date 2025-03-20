@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - LesPondoirs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- HEADER ET NAVIGATION -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">LesPondoirs</div>
+                <div class="nav-links">
+                    <a href="index.html">Accueil</a>
+                    <a href="produits.html">Produits</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="connexion.html" class="btn">Connexion</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- BANNIÈRE DE PAGE -->
+    <section class="page-banner">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Nous sommes à votre écoute pour répondre à toutes vos questions</p>
+        </div>
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>Nos coordonnées</h2>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h4>Adresse</h4>
+                            <p>2 Chemin des Volailles<br>45000 Orléans<br>Senegal</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4>Téléphone</h4>
+                            <p>02 38 XX XX XX</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4>Email</h4>
+                            <p>contact@fermedesoeufsfrais.fr</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div>
+                            <h4>Heures d'ouverture</h4>
+                            <p>Du lundi au vendredi: 8h - 18h<br>Samedi: 8h - 12h<br>Dimanche: Fermé</p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Suivez-nous</h4>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Envoyez-nous un message</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom complet</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Téléphone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <select id="subject" name="subject">
+                                <option value="question">Question sur les produits</option>
+                                <option value="order">Commande</option>
+                                <option value="feedback">Commentaires</option>
+                                <option value="other">Autre</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input type="checkbox" id="consent" name="consent" required>
+                            <label for="consent">J'accepte la politique de confidentialité</label>
+                        </div>
+                        <button type="submit" class="btn">Envoyer le message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CARTE -->
+    <section class="map-section">
+        <div class="container">
+            <h2>Nous trouver</h2>
+            <div class="map-container">
+                <!-- Ici, vous pouvez intégrer une carte Google Maps ou une autre carte -->
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt"></i>
+                    <p>Carte interactive à intégrer ici</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION FAQ COURTE -->
+    <section class="faq">
+        <div class="container">
+            <h2>Questions fréquentes sur le contact</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Quel est le délai de réponse à mes demandes ?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nous nous engageons à répondre à toutes les demandes dans un délai de 24 à 48 heures ouvrables. Pour les urgences, n'hésitez pas à nous appeler directement.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        Puis-je visiter votre ferme ?
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Oui, nous organisons des visites guidées de notre exploitation sur rendez-vous. Veuillez nous contacter par téléphone ou par email pour réserver votre visite.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h4>Ferme des Œufs Frais</h4>
+                    <p>2 Chemin des Volailles<br>45000 Orléans<br>Senegal</p>
+                    <p>Tél : 02 38 XX XX XX<br>Email : contact@fermedesoeufsfrais.fr</p>
+                </div>
+                <div class="footer-column">
+                    <h4>Liens utiles</h4>
+                    <div class="footer-links">
+                        <a href="index.html">Accueil</a>
+                        <a href="index.html#about">À propos</a>
+                        <a href="produits.html">Produits</a>
+                        <a href="#">Politique de confidentialité</a>
+                        <a href="#">Conditions générales de vente</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Suivez-nous</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                    <p>Inscrivez-vous à notre newsletter pour recevoir nos offres et actualités :</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Votre email" required>
+                        <button type="submit" class="btn">S'inscrire</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 LesPondoirs. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', event => {
+                const parent = item.parentNode;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
